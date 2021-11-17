@@ -10,11 +10,9 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    set_article
   end
 
   def update
-    set_article
     if @article.update(article_params)
       redirect_to articles_path, notice: "Updated an article"
     else
@@ -24,7 +22,6 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
-    set_article
     
     @article.destroy
     redirect_to articles_path
