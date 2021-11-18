@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 # Use prettier for code formatting
 gem 'prettier'
 
+gem 'haml'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
