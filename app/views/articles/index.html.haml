@@ -22,6 +22,8 @@
         %td
           = a.content.truncate(100)
         %td
+          = link_to "Show", article_path(a.id)
+          |
           = link_to "Edit", edit_article_path(a.id)
           |
           = link_to "Destroy", article_path(a), method: :delete, data: {confirm: "Are you sure?"}
