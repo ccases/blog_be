@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :articles do
     resources :comments
+    resources :categories
   end
 
   # get '/articles' => 'articles#index'

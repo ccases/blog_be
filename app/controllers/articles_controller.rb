@@ -15,6 +15,9 @@ class ArticlesController < ApplicationController
   def show
     @comments = @article.comments.where.not(id: nil)
     @comment = @article.comments.build
+    
+    @categories = @article.categories.where.not(id:nil)
+    @comment = @article.categories.build
   end
 
   def update
