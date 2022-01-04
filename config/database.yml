@@ -21,12 +21,7 @@ test:
   database: db/test.sqlite3
 
 production:
-  # <<: *default
-  # database: db/production.sqlite3
   adapter: postgresql
   port: 5432
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  # username: <%= ENV.fetch("DATABASE_USERNAME") %>
-  # password: <%= ENV.fetch("DATABASE_PASSWORD") %>
-  # database: 'my_blog'
   url: <%= ENV.fetch("DATABASE_URL") %>
